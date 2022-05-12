@@ -1,0 +1,25 @@
+@import "./base/_common.scss";
+@import "./base/_reset.scss";
+///////////////////////////////
+@import "./utils/_hidden";
+@import "./utils/_variables.scss";
+///////////////////////////////////
+@import "./components/container.scss";
+@import "./components/logo.scss";
+@import "./components/container.scss";
+@import "./components/contact-us.scss";
+@import "./components/button.scss";
+@import "./components/section.scss";
+@import "./components/cards";
+@import "./components/social";
+@import "./components/filter";
+@import "./components/backdrop";
+@import "./components/modal";
+///////////////////////////////////
+@import "./layout/header";
+@import "./layout/main-section";
+@import "./layout/advantages";
+@import "./layout/activity";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/projects";
