@@ -3,6 +3,7 @@
 ///////////////////////////////
 @import "./utils/_hidden";
 @import "./utils/_variables.scss";
+@import "./utils/_mixins.scss";
 ///////////////////////////////////
 @import "./components/container.scss";
 @import "./components/logo.scss";
@@ -12,6 +13,7 @@
 @import "./components/section.scss";
 @import "./components/cards";
 @import "./components/social";
+@import "./components/follow-us";
 @import "./components/filter";
 @import "./components/backdrop";
 @import "./components/modal";

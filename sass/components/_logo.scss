@@ -1,18 +1,44 @@
-.header__logo {
-  margin-right: 93px;
-  color: var(--title-text-color);
-}
+// .logo--black {
+//   margin-right: 93px;
+//   color: var(--title-text-color);
+// }
 
-.footer-logo {
-  color: var(--white-color);
-}
+// .logo--white {
+//   color: var(--white-color);
+// }
+
+// .logo {
+//   font-family: "Raleway";
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: var(--accent-color);
+// }
 
 .logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+.logo--responsive {
+  @include tablet {
+    margin-left: 80px;
+  }
+  @include desktop {
+    margin-left: auto;
+  }
+}
+.logo--black {
+  margin-right: 93px;
+  color: var(--title-text-color);
+}
+
+.logo--white {
+  color: var(--white-color);
 }

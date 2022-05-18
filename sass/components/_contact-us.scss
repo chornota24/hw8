@@ -17,9 +17,10 @@
 .contact-us__via {
   padding-top: 32px;
   padding-bottom: 32px;
+
   display: flex;
-  color: var(--primary-text-color);
   align-items: center;
+  color: var(--primary-text-color);
 
   transition-property: color;
   transition-duration: 250ms;
@@ -32,5 +33,6 @@
 
 .contact-us__icon {
   margin-right: 10px;
+
   fill: currentColor;
 }

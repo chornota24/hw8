@@ -1,9 +1,48 @@
+// .cards__wrap {
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+// }
+
+// .cards__title {
+//   margin-bottom: 10px;
+
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.18;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: var(--title-text-color);
+// }
+
+// .cards__text {
+//   font-size: 16px;
+//   line-height: 1.18;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: var(--primary-text-color);
+// }
+
+// .cards {
+//   display: flex;
+// }
+
+// .cards__item + .cards__item {
+//   margin-left: 30px;
+// }
+
+// .cards__item {
+//   background-color: var(--white-color);
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+//     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 0px 0px 4px 4px;
+// }
+
 .cards__wrap {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .cards__title {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -23,11 +62,27 @@
 }
 
 .cards {
-  display: flex;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  @include desktop {
+    margin-bottom: auto;
+  }
 }
 
-.cards__item + .cards__item {
-  margin-left: 30px;
+.cards__item {
+  margin-top: 30px;
+  @include tablet {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @include desktop {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .cards__item {

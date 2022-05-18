@@ -5,6 +5,7 @@
 .header__container {
   display: flex;
   align-items: center;
+
   border-bottom: 1px solid color #ececec;
 }
 
@@ -19,10 +20,11 @@
 }
 
 .header-nav__link {
-  display: block;
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
-  position: relative;
+
+  display: block;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -42,9 +44,10 @@
   color: var(--accent-color);
 
   &::after {
-    display: block;
     content: "";
+    display: block;
     position: absolute;
+
     bottom: -1px;
     left: 0;
     width: 100%;
