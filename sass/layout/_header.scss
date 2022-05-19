@@ -76,7 +76,7 @@
   }
 }
 
-.open-menu-button {
+.js-open-menu {
   display: block;
   margin-left: auto;
 
@@ -88,7 +88,7 @@
     fill: var(--accent-color);
   }
 }
-.mob-close-button {
+.js-close-menu {
   border: none;
   margin-top: 10px;
   margin-right: 15px;

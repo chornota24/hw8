@@ -76,20 +76,24 @@
             >
           </li>
         </ul>
-        <button class="open-menu-button">
+        <button
+          class="js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="open-menu-icon" width="40" height="40">
             <use href="icons/symbol-defs.svg#icon-menu_24px"></use>
           </svg>
         </button>
       </div>
       <!-- mobile-menu -->
-      <!-- <div class="mobile-menu">
+      <div class="mobile-menu" id="mobile-menu">
         <div class="container">
           <button
             type="button"
-            class="modal__close-btn mob-close-button"
+            class="modal__close-btn js-close-menu"
             data-modal-close
-          > -->
+          >
             <svg width="18" height="18">
               <use href="./icons/symbol-defs.svg#icon-close"></use>
             </svg>
@@ -291,7 +295,7 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="cards">
             <li class="cards__item">
-              <picture >
+              <picture>
                 <source
                   srcset="./img/img.jpg 1x, ./img/img-2x.jpg 2x"
                   media="(min-width: 1200px)"
@@ -310,7 +314,11 @@
                   "
                   media="(min-width: 320px)"
                 />
-                <img src="./img/img-mob.jpg" alt="Игорь Демьяненко" class="cards__img" />
+                <img
+                  src="./img/img-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  class="cards__img"
+                />
               </picture>
 
               <div class="cards__wrap">
@@ -376,7 +384,11 @@
                   "
                   media="(min-width: 320px)"
                 />
-                <img src="./img/img-2-mob.jpg" alt="Ольга Репина" class="cards__img"/>
+                <img
+                  src="./img/img-2-mob.jpg"
+                  alt="Ольга Репина"
+                  class="cards__img"
+                />
               </picture>
 
               <div class="cards__wrap">
@@ -445,7 +457,8 @@
                 <img
                   src="./img/img-3-mob.jpg"
                   alt="Николай Тарасов"
-                  class="cards__img"/>
+                  class="cards__img"
+                />
               </picture>
 
               <div class="cards__wrap">
@@ -515,7 +528,11 @@
                   "
                   media="(min-width: 320px)"
                 />
-                <img src="./img/img-4.jpg" alt="Михаил Ермаков" class="cards__img"/>
+                <img
+                  src="./img/img-4.jpg"
+                  alt="Михаил Ермаков"
+                  class="cards__img"
+                />
               </picture>
 
               <div class="cards__wrap">
@@ -818,6 +835,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
