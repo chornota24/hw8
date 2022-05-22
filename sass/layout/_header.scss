@@ -64,6 +64,7 @@
   background-color: #ffffff;
   position: fixed;
   top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
   z-index: 5;
@@ -74,6 +75,12 @@
     height: 100%;
     overflow: auto;
   }
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
 }
 
 .js-open-menu {
@@ -92,6 +99,21 @@
   border: none;
   margin-top: 10px;
   margin-right: 15px;
+}
+.mobile__close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .mob-nav__link {
   font-weight: 500;
