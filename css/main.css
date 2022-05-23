@@ -106,8 +106,12 @@ ol {
 }
 
 .logo--black {
-  margin-right: 93px;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo--black {
+    margin-right: 93px;
+  }
 }
 
 .logo--white {
@@ -137,8 +141,7 @@ ol {
 }
 
 .contact-us {
-  display: flex;
-  margin-left: auto;
+  display: none;
   align-items: center;
   font-weight: 500;
   font-size: 14px;
@@ -146,14 +149,30 @@ ol {
   letter-spacing: 0.02em;
   fill: var(--primary-text-color);
 }
+@media screen and (min-width: 768px) {
+  .contact-us {
+    display: block;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-us {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .contact-us__item + .contact-us__item {
-  margin-left: 50px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contact-us__item + .contact-us__item {
+    margin-left: 50px;
+    margin-top: auto;
+  }
 }
 
 .contact-us__via {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
@@ -163,6 +182,12 @@ ol {
 }
 .contact-us__via:hover, .contact-us__via:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .contact-us__via {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contact-us__icon {
@@ -595,18 +620,26 @@ ol {
 }
 
 .header__container {
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid color #ececec;
 }
 
 .header-nav {
-  display: flex;
+  display: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+  }
 }
 
 .header-nav__link {
@@ -676,6 +709,11 @@ ol {
 .js-open-menu:hover {
   fill: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .js-open-menu {
+    display: none;
+  }
+}
 
 .js-close-menu {
   border: none;
@@ -741,7 +779,9 @@ ol {
 }
 
 .mob-social__item + .mob-social__item {
-  margin-left: 20px;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .current {
@@ -895,6 +935,14 @@ ol {
 
 .clients {
   margin-bottom: -10px;
+}
+@media screen and (max-width: 479px) {
+  .clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 480px) {
   .clients {

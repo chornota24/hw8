@@ -35,8 +35,11 @@
   }
 }
 .logo--black {
-  margin-right: 93px;
+  // margin-right: 88px;
   color: var(--title-text-color);
+  @include desktop {
+    margin-right: 93px;
+  }
 }
 
 .logo--white {

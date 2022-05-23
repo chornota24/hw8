@@ -30,6 +30,13 @@
 // }
 
 .clients {
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   margin-bottom: -10px;
   @include mobile {
     margin-left: -30px;

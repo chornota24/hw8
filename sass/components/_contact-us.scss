@@ -1,6 +1,6 @@
 .contact-us {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  // margin-left: auto;
   align-items: center;
 
   font-weight: 500;
@@ -8,16 +8,25 @@
   line-height: 1.33;
   letter-spacing: 0.02em;
   fill: var(--primary-text-color);
+  @include tablet {
+    display: block;
+    flex-direction: column;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .contact-us__item + .contact-us__item {
-  margin-left: 50px;
+  margin-top: 10px;
+  @include desktop {
+    margin-left: 50px;
+    margin-top: auto;
+  }
 }
 
 .contact-us__via {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
@@ -28,6 +37,10 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
