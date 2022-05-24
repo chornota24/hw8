@@ -26,17 +26,13 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo--responsive {
-  @include tablet {
-    margin-left: 80px;
-  }
-  @include desktop {
-    margin-left: auto;
-  }
-}
+
 .logo--black {
   // margin-right: 88px;
   color: var(--title-text-color);
+}
+
+.logo--margin-right {
   @include desktop {
     margin-right: 93px;
   }

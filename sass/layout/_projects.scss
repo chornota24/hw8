@@ -92,7 +92,10 @@
 }
 
 .projects__item {
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @include tablet {
     margin-left: 30px;
     width: calc(100% / 2 - 30px);

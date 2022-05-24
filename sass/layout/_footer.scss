@@ -106,17 +106,26 @@
   padding-bottom: 60px;
 
   background: #2f303a;
+  @include desktop {
+    padding-bottom: 0;
+  }
 }
 
 .footer--tablet {
   @include tablet {
+    margin-bottom: 60px;
+    justify-content: space-around;
+    align-items: baseline;
     display: flex;
   }
 }
 
+.footer--margin-bottom {
+  margin-bottom: 60px;
+}
+
 .address {
   margin-top: 20px;
-  margin-bottom: 60px;
 
   text-align: center;
 
@@ -124,9 +133,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  @include tablet {
-    margin-left: 76px;
-  }
+
   @include desktop {
     margin-left: auto;
     text-align: left;
@@ -166,13 +173,9 @@
 }
 
 .social__wrap {
-  margin-bottom: 60px;
-  @include tablet {
-    margin-left: 165px;
-  }
   @include desktop {
     margin-left: 70px;
-    margin-right: auto;
+
     text-align: left;
   }
 }

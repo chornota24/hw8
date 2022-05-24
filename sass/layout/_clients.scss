@@ -61,13 +61,11 @@
   @include desktop {
     width: calc(100% / 6 - 30px);
     margin-left: 30px;
-    margin-bottom: 94px;
   }
 }
 
 .clients__link {
   display: flex;
-  width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;

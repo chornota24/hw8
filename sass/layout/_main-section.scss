@@ -36,7 +36,7 @@
 
 .main-section {
   padding-top: 118px;
-  padding-bottom: 118;
+  padding-bottom: 118px;
 
   color: var(--white-color);
   background-color: #2f303a;
@@ -82,6 +82,11 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../img4/Img-tab-2x.jpg);
+    }
+    @include desktop {
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
   }
   @include desktop {

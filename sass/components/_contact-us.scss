@@ -13,6 +13,7 @@
     flex-direction: column;
   }
   @include desktop {
+    margin-left: auto;
     display: flex;
     flex-direction: row;
   }

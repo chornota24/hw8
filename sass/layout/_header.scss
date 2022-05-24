@@ -1,16 +1,15 @@
 .header {
   border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid color #ececec;
 }
 
 .header__container {
-  padding-top: 16px;
-  padding-bottom: 16px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  border-bottom: 1px solid color #ececec;
+  @include desktop {
+    justify-content: start;
+  }
 }
 
 .header-nav {
